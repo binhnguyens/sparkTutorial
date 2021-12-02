@@ -23,6 +23,6 @@ public class SameHostsSolution {
 
         JavaRDD<String> cleanedHostIntersection = intersection.filter(host -> !host.equals("host"));
 
-        cleanedHostIntersection.saveAsTextFile("out/nasa_logs_same_hosts.csv");
+        cleanedHostIntersection.saveAsTextFile("out/nasa_logs_same_hosts_ANS.csv");
     }
 }
